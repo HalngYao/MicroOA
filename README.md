@@ -40,6 +40,8 @@
 知乎：https://www.zhihu.com/zvideo/1463896474149421056
 <br/>
 B站：https://www.bilibili.com/video/BV1534y1B7J1?spm_id_from=333.999.0.0
+<br/>
+论文支撑：https://zhuanlan.zhihu.com/p/455489559
 
 **2.环境搭建**
 <br/>
