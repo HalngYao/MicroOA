@@ -1,0 +1,938 @@
+﻿/*2.按钮全部显示*/
+/*同意审批*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff
+}
+/*驳回审批*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff
+}
+/*转发*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*草稿*/   /*草稿功能还没开放所以隐藏，只是存放了备用按钮留作今后使用*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+}
+/*提交*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+}
+/*修改*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+}
+/*撤回*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+}
+/*打印*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*结案*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*删除*/
+.micro-layer-class2 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+}
+
+
+/*3.表单处于可修改状态(表单被驳回且动作为Modify时)。按钮只显示修改、打印、删除和关闭 || 审批、草稿、提交、撤回、受理和结案隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+}
+/*撤回--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none;
+}
+/*打印*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除*/
+.micro-layer-class3 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    /*display: none;*/ /*需要显示*/
+}
+
+
+/*3-2.表单处于可修改状态(表单未提交或草稿时且动作为Add时)。按钮只显示提交、打印、删除和关闭 || 审批、草稿、修改、撤回、受理和结案隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+}
+/*修改--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none;
+}
+/*打印*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除*/
+.micro-layer-class3-2 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+}
+
+
+/*4.表单处于审批完成和结案已完成状态（或者处于修改状态但没有权限修改），按钮只显示打印和关闭 || 审批、草稿、提交、修改、撤回、受理、结案和删除隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none;
+}
+/*打印*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class4 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*4-2.表单处于审批完成和结案已完成状态，按钮只显示撤回、打印和关闭 || 审批、草稿、提交、修改、受理、结案和删除隐藏 （目前只用于HR表单）*/
+/*同意审批--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    /*display: none;*/  /*需要显示*/
+}
+/*打印*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class4-2 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*5.表单处理审批状态（表单不能修改），按钮显示审批和撤回、打印和关闭 || 草稿、提交、修改、撤回、受理、结案和删除隐藏*/
+/*同意审批*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+}
+/*驳回审批*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+}
+/*转发*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none; /*需要显示*/
+}
+/*草稿--隐藏*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none; /*需要显示*/
+}
+/*打印*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class5 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*5-2.表单处理审批状态（表单不能修改），按钮只显示审批（只对于审批者而言、对于申请者还要显示撤回）、打印和关闭 || 草稿、提交、修改、撤回、受理、结案和删除隐藏，注：目前该策略对于审批者而言需要隐藏撤回功能，但后续对审批也应该有撤回功能 20210304注*/
+/*同意审批*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+}
+/*驳回审批*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+}
+/*转发*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none; /*需要显示*/
+}
+/*草稿--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none;
+}
+/*打印*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class5-2 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*6.表单处于受理状态，按钮只显示受理、撤回、打印和关闭 || 审批、草稿、提交、修改、结案和删除隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    /*display: none;*/ /*需要显示*/
+}
+/*打印*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*结案--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class6 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*6-2.表单处于受理状态，按钮只显示受理、打印和关闭 || 审批、草稿、提交、修改、撤回、结案和删除隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none;
+}
+/*打印*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*结案--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class6-2 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*7.表单处于结案状态，按钮只显示结案、撤回、打印和关闭 || 审批、草稿、提交、修改、受理和删除隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    /*display: none;*/ /*需要显示*/
+}
+/*打印*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*删除--隐藏*/
+.micro-layer-class7 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*7-2.表单处于结案状态，按钮只显示结案、打印和关闭 || 审批、草稿、提交、修改、撤回、受理和删除隐藏*/
+/*同意审批--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    display: none;
+}
+/*打印*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+}
+/*删除--隐藏*/
+.micro-layer-class7-2 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}
+
+
+/*8.表单处于等待审批或等待受理或等待结案状态（表单不能修改），按钮只显示撤回、打印和关闭 || 审批、草稿、提交、修改、受理、结案和删除隐藏*/
+/*显示撤回的条件是上一节点已审批，而下一节点还没有审批*/
+/*同意审批--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*驳回审批--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn1 {
+    border-color: #FF5722 !important;
+    background-color: #FF5722 !important;
+    color: #fff;
+    display: none;
+}
+/*转发*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn2 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*草稿--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn3 {
+    border-color: #9d8a0e !important;
+    background-color: #9d8a0e !important;
+    color: #fff;
+    display: none;
+}
+/*提交--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn4 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff;
+    display: none;
+}
+/*修改--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn5 {
+    border-color: #1E9FFF !important;
+    background-color: #1E9FFF !important;
+    color: #fff;
+    display: none;
+}
+/*撤回*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn6 {
+    border-color: #c71585 !important;
+    background-color: #c71585 !important;
+    color: #fff;
+    /*display: none;*/ /*需要显示*/
+}
+/*打印*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn7 {
+    border-color: #FFB800 !important;
+    background-color: #FFB800 !important;
+    color: #fff;
+    display: none;
+}
+/*受理--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn8 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*结案--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn9 {
+    border-color: #01AAED !important;
+    background-color: #01AAED !important;
+    color: #fff;
+    display: none;
+}
+/*删除--隐藏*/
+.micro-layer-class8 .layui-layer-btn .layui-layer-btn10 {
+    border-color: #c2c2c2 !important;
+    background-color: #c2c2c2 !important;
+    color: #fff;
+    display: none;
+}

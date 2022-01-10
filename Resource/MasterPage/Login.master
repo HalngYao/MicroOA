@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Login.master.cs" Inherits="Resource_MasterPage_Login" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%: GetMicroInfo("Title") %></title>
+    <meta name="description" content="<%: MicroPublicHelper.MicroPublic.GetMicroInfo("MetaDescription") %>" />
+    <meta name="keywords" content="<%: MicroPublicHelper.MicroPublic.GetMicroInfo("MetaKeyword") %>" />
+    <script src="<%: ResolveUrl("~/layuiadmin/layui/layui.js")%>"></script>
+    <link href="<%: ResolveUrl("~/layuiadmin/layui/css/layui.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/layuiadmin/style/admin.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/layuiadmin/style/login.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/CSS/micro.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/ico/iconfont.css")%>" rel="stylesheet" media="all" />   
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <script src='<%: ResolveUrl("~/Resource/Js/GLogin.js")%>'></script>
+        <div class="layadmin-user-login layadmin-user-display-show" id="LAY-user-login" style="display: none;">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+            <div class="layui-trans layadmin-user-login-footer">
+                <p><%= GetMicroInfo("Foot") %></p>
+            </div>
+            
+        </div>    
+    </form>
+</body>
+</html>

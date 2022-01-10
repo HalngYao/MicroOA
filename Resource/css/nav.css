@@ -1,0 +1,75 @@
+﻿.layui-nav{position:relative;padding:0 20px;background-color:#393D49;color:#fff;border-radius:2px;font-size:0;box-sizing:border-box}
+.layui-nav *{font-size:14px}
+.layui-nav .layui-nav-item{position:relative;display:inline-block;*display:inline;*zoom:1;vertical-align:middle;line-height:60px}
+.layui-nav .layui-nav-item a{display:block;padding:0 20px;color:#fff;color:rgba(255,255,255,.7);transition:all .3s;-webkit-transition:all .3s}
+.layui-nav .layui-this:after,.layui-nav-bar,.layui-nav-tree .layui-nav-itemed:after{position:absolute;left:0;top:0;width:0;height:5px;background-color:#5FB878;transition:all .2s;-webkit-transition:all .2s}
+.layui-nav-bar{z-index:1000}
+.layui-nav .layui-nav-item a:hover,.layui-nav .layui-this a{color:#fff}
+.layui-nav .layui-this:after{content:'';top:auto;bottom:0;width:100%}
+.layui-nav-img{width:30px;height:30px;margin-right:10px;border-radius:50%}
+.layui-nav .layui-nav-more{content:'';width:0;height:0;border-style:solid dashed dashed;border-color:#fff transparent transparent;overflow:hidden;cursor:pointer;transition:all .2s;-webkit-transition:all .2s;position:absolute;top:50%;right:3px;margin-top:-4px;border-width:6px;border-top-color:rgba(255,255,255,.7)}
+.layui-nav .layui-nav-mored,.layui-nav-itemed>a .layui-nav-more{margin-top:-9px;border-style:dashed dashed solid;border-color:transparent transparent #fff}
+.layui-nav-child{display:none;position:absolute;left:0;top:65px;min-width:100%;line-height:36px;padding:5px 0;box-shadow:0 2px 4px rgba(0,0,0,.12);border:1px solid #d2d2d2;background-color:#fff;z-index:100;border-radius:2px;white-space:nowrap}
+.layui-nav .layui-nav-child a{color:#333}
+.layui-nav .layui-nav-child a:hover{background-color:#f2f2f2;color:#000}
+.layui-nav-child dd{position:relative}
+.layui-nav .layui-nav-child dd.layui-this a,.layui-nav-child dd.layui-this{background-color:#5FB878;color:#fff}
+.layui-nav-child dd.layui-this:after{display:none}
+.layui-nav-tree{width:200px;padding:0}
+.layui-nav-tree .layui-nav-item{display:block;width:100%;line-height:45px}
+.layui-nav-tree .layui-nav-item a{position:relative;height:45px;line-height:45px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
+.layui-nav-tree .layui-nav-item a:hover{background-color:#4E5465}
+.layui-nav-tree .layui-nav-bar{width:5px;height:0;background-color:#009688}
+.layui-nav-tree .layui-nav-child dd.layui-this,.layui-nav-tree .layui-nav-child dd.layui-this a,.layui-nav-tree .layui-this,.layui-nav-tree .layui-this>a,.layui-nav-tree .layui-this>a:hover{background-color:#009688;color:#fff}
+.layui-nav-tree .layui-this:after{display:none}
+.layui-nav-itemed>a,.layui-nav-tree .layui-nav-title a,.layui-nav-tree .layui-nav-title a:hover{color:#fff!important}
+.layui-nav-tree .layui-nav-child{position:relative;z-index:0;top:0;border:none;box-shadow:none}
+.layui-nav-tree .layui-nav-child a{height:40px;line-height:40px;color:#fff;color:rgba(255,255,255,.7)}
+.layui-nav-tree .layui-nav-child,.layui-nav-tree .layui-nav-child a:hover{background:0 0;color:#fff}
+.layui-nav-tree .layui-nav-more{right:10px}
+.layui-nav-itemed>.layui-nav-child{display:block;padding:0;background-color:rgba(0,0,0,.3)!important}
+.layui-nav-itemed>.layui-nav-child>.layui-this>.layui-nav-child{display:block}
+.layui-nav-side{position:fixed;top:0;bottom:0;left:0;overflow-x:hidden;z-index:999}
+.layui-bg-blue .layui-nav-bar,.layui-bg-blue .layui-nav-itemed:after,.layui-bg-blue .layui-this:after{background-color:#93D1FF}
+.layui-bg-blue .layui-nav-child dd.layui-this{background-color:#1E9FFF}
+.layui-bg-blue .layui-nav-itemed>a,.layui-nav-tree.layui-bg-blue .layui-nav-title a,.layui-nav-tree.layui-bg-blue .layui-nav-title a:hover{background-color:#007DDB!important}
+.layui-nav .layui-badge,.layui-nav .layui-badge-dot{position:absolute;top:50%;margin:-8px 6px 0}
+
+
+
+
+/*.layui-nav{position:relative;padding:0 20px;background-color:#393D49;color:#fff;border-radius:2px;font-size:0;box-sizing:border-box}*/
+.layui-nav{position:relative;padding:0 20px;background-color:#fff;color:#000!important;border-radius:2px;font-size:0;box-sizing:border-box}
+/*.layui-nav .layui-nav-item a{display:block;padding:0 20px;color:#fff;color:rgba(255,255,255,.7);transition:all .3s;-webkit-transition:all .3s}*/
+.layui-nav .layui-nav-item a{display:block;padding:0 20px;color:#000 !important;color:rgba(57,61,73,.7)!important;transition:all .3s;-webkit-transition:all .3s}
+/*.layui-nav .layui-this:after,.layui-nav-bar,.layui-nav-tree .layui-nav-itemed:after{position:absolute;left:0;top:0;width:0;height:5px;background-color:#5FB878;transition:all .2s;-webkit-transition:all .2s}*/
+.layui-nav .layui-this:after,.layui-nav-bar,.layui-nav-tree .layui-nav-itemed:after{position:absolute;left:0;top:0;width:0;height:5px;background-color:#5FB878;transition:all .2s;-webkit-transition:all .2s} /*鼠标移过主菜单，左边竖形条颜色绿色*/
+/*.layui-nav .layui-nav-item a:hover,.layui-nav .layui-this a{color:#fff}*/
+.layui-nav .layui-nav-item a:hover,.layui-nav .layui-this a{color:#000!important}  /*选中时字体颜色*/
+/*.layui-nav .layui-nav-more{content:'';width:0;height:0;border-style:solid dashed dashed;border-color:#fff transparent transparent;overflow:hidden;cursor:pointer;transition:all .2s;-webkit-transition:all .2s;position:absolute;top:50%;right:3px;margin-top:-4px;border-width:6px;border-top-color:rgba(255,255,255,.7)}*/
+.layui-nav .layui-nav-more{content:'';width:0;height:0;border-style:solid dashed dashed;border-color:#fff transparent transparent !important;overflow:hidden;cursor:pointer;transition:all .2s;-webkit-transition:all .2s;position:absolute;top:50%;right:3px;margin-top:-4px;border-width:6px;border-top-color:rgba(255,255,255,0)}
+.layui-nav .layui-nav-mored,.layui-nav-itemed>a .layui-nav-more{margin-top:-9px;border-style:dashed dashed solid;border-color:transparent transparent #fff}
+/*.layui-nav-child{display:none;position:absolute;left:0;top:65px;min-width:100%;line-height:36px;padding:5px 0;box-shadow:0 2px 4px rgba(0,0,0,.12);border:1px solid #d2d2d2;background-color:#fff;z-index:100;border-radius:2px;white-space:nowrap}*/
+.layui-nav-child{display:none;position:absolute;left:0;top:65px;min-width:100%;line-height:36px;padding:5px 0;box-shadow:0 2px 4px rgba(0,0,0,.12);border:1px solid #d2d2d2;background-color:#000!important;z-index:100;border-radius:2px;white-space:nowrap}
+/*.layui-nav .layui-nav-child a{color:#333}*/
+.layui-nav .layui-nav-child a{color:#000} /*默认显示的字体颜色*/
+/*.layui-nav .layui-nav-child a:hover{background-color:#f2f2f2;color:#000}*/
+  .layui-nav .layui-nav-child a:hover{background-color:#fff!important;color:#333!important} /*鼠标移入背景颜色和字体颜色*/
+/*.layui-nav .layui-nav-child dd.layui-this a,.layui-nav-child dd.layui-this{background-color:#5FB878;color:#fff}*/
+  .layui-nav .layui-nav-child dd.layui-this a,.layui-nav-child dd.layui-this{background-color:#fff!important;color:#fff}
+/*.layui-nav-tree .layui-nav-item a:hover{background-color:#4E5465}*/
+  .layui-nav-tree .layui-nav-item a:hover{background-color:#fff!important}
+  .layui-nav-tree .layui-nav-bar{width:5px;height:0;background-color:#009688}
+/*.layui-nav-tree .layui-nav-child dd.layui-this,.layui-nav-tree .layui-nav-child dd.layui-this a,.layui-nav-tree .layui-this,.layui-nav-tree .layui-this>a,.layui-nav-tree .layui-this>a:hover{background-color:#009688;color:#fff}*/
+.layui-nav-tree .layui-nav-child dd.layui-this,.layui-nav-tree .layui-nav-child dd.layui-this a,.layui-nav-tree .layui-this,.layui-nav-tree .layui-this>a,.layui-nav-tree .layui-this>a:hover{background-color:#FFFFFF!important;color:#009688!important}  /*选中时的颜色*/
+.layui-nav-tree .layui-this:after{display:none}
+/*.layui-nav-itemed>a,.layui-nav-tree .layui-nav-title a,.layui-nav-tree .layui-nav-title a:hover{color:#fff!important}*/
+ .layui-nav-itemed>a,.layui-nav-tree .layui-nav-title a,.layui-nav-tree .layui-nav-title a:hover{color:#000!important}
+
+/*.layui-nav-tree .layui-nav-child a{height:40px;line-height:40px;color:#fff;color:rgba(255,255,255,.7)}*/
+ .layui-nav-tree .layui-nav-child a{height:40px;line-height:40px;color:#000!important;color:rgba(0,0,0,.7)!important}
+/*.layui-nav-tree .layui-nav-child,.layui-nav-tree .layui-nav-child a:hover{background:0 0;color:#fff}*/
+ .layui-nav-tree .layui-nav-child,.layui-nav-tree .layui-nav-child a:hover{background:0 0;color:#333!important} /*鼠标移过背景颜色和字体颜色*/
+ .layui-nav-tree .layui-nav-more{right:10px}
+/*.layui-nav-itemed>.layui-nav-child{display:block;padding:0;background-color:rgba(0,0,0,.3)!important}*/
+ .layui-nav-itemed>.layui-nav-child{display:block;padding:0;background-color:rgba(255,255,255,.3)!important} /*子菜单背景颜色*/

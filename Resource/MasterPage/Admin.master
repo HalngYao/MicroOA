@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Resource_MasterPage_Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%: GetMicroInfo("Title") %></title>
+    <meta name="description" content="<%: MicroPublicHelper.MicroPublic.GetMicroInfo("MetaDescription") %>" />
+    <meta name="keywords" content="<%: MicroPublicHelper.MicroPublic.GetMicroInfo("MetaKeyword") %>" />
+    <script src='<%: ResolveUrl("~/layuiadmin/layui/layui.js")%>'></script>
+    <link href="<%: ResolveUrl("~/layuiadmin/layui/css/layui.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/layuiadmin/style/admin.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/css/micro.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/ico/iconfont.css")%>" rel="stylesheet" media="all" />
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="layui-fluid">
+        <script src='<%: ResolveUrl("~/Resource/Js/Admin.js")%>'></script>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+        <input id="txtState" type="hidden" runat="server" value="False" />
+        <asp:HiddenField ID="txtGID" runat="server" />
+
+        <input id="txtIsWaterMark" type="hidden" runat="server" visible="false" value="False" />
+        <input id="txtWaterMarkText" type="hidden" runat="server" visible="false" value="WaterMark" />
+        <input id="txtXSpace" type="hidden" runat="server" visible="false" value="100" />
+        <input id="txtYSpace" type="hidden" runat="server" visible="false" value="100" />
+        <input id="txtWaterMarkColor" type="hidden" runat="server" visible="false" value="#dddddd" />
+
+    </div>        
+    </form>
+</body>
+</html>

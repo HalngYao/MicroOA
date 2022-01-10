@@ -1,0 +1,22 @@
+﻿        .layui-nav{position:relative;padding:0 20px;background-color:#fff;color:#000!important;border-radius:2px;font-size:0;box-sizing:border-box;}  /*定义nav背景颜色为白色，字体颜色黑色*/
+        .layui-nav .layui-nav-item a{display:block;padding:0 20px;color:#000 !important;color:rgba(0,0,0,.7)!important;transition:all .3s;-webkit-transition:all .3s;}
+        .layui-nav .layui-nav-more{content:'';width:0;height:0;border-style:solid dashed dashed;border-color:#fff transparent transparent !important;overflow:hidden;cursor:pointer;transition:all .2s;-webkit-transition:all .2s;position:absolute;top:50%;right:8px;margin-top:-4px;border-width:6px;border-top-color:rgba(0,0,0,.5)!important;}  /*三角符号生成，位置和颜色*/
+        .layui-nav .layui-nav-mored,.layui-nav-itemed>a .layui-nav-more{margin-top:-9px;border-style:dashed dashed solid;border-color:transparent transparent rgba(0,0,0,.5)!important;}
+        .layui-nav-tree .layui-nav-bar{width:5px;height:0;background-color:#009688; display:none;}
+        .layui-nav-tree .layui-nav-child dd.layui-this,.layui-nav-tree .layui-nav-child dd.layui-this a,.layui-nav-tree .layui-this,.layui-nav-tree .layui-this>a,.layui-nav-tree .layui-this>a:hover{background-color:#FFFFFF!important;color:#009688!important;}  /*选中时的样式*/
+        .layui-nav-itemed>a{border-left:5px solid #009688!important; font-weight:bold;}
+        .layui-nav-item>a, layui-nav-item>a {border-left:5px solid #009688!important; background-color:#f2f2f2!important; font-weight:bold;}
+        .layui-nav-tree .layui-nav-child,.layui-nav-tree .layui-nav-child a:hover{background:0 0;color:#009688!important;} /*鼠标移过背景颜色和字体颜色*/
+        .layui-nav-itemed>.layui-nav-child{display:block;padding:0;background-color:rgba(255,255,255,.3)!important;} /*子菜单背景颜色*/
+        .layui-nav-child a { display:inline!important;}
+        .layui-nav-child dd span{opacity:0;}  /*默认隐藏*/
+        .layui-nav-child dd:hover span{opacity:1;display:inline!important; right:-10px; height:40px;line-height:40px;position:absolute; cursor:pointer;}  /*鼠标悬停显示*/
+        .layui-nav-item >a +span {opacity:0; display:inline!important; color:#009688; position:absolute; right:-34px; top:0px;cursor:pointer;}
+        .layui-nav-item:hover >a +span {opacity:1; display:inline!important; color:#009688; position:absolute; right:-34px; top:0px;cursor:pointer;}  /*鼠标悬停显示*/
+        /*更多操作的下拉按钮三角箭头取消继承父样式*/
+        .micro-btn .layui-icon {all:unset; }
+        
+        .layui-layer-btn {
+            border-top: solid 1px #eeeeee;
+            background-color: #F8F8F8;
+        }

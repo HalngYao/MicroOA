@@ -1,0 +1,93 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Info.master.cs" Inherits="Resource_MasterPage_Info" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title><%: GetMicroInfo("InfoPlatformTitle") == "" ?  GetMicroInfo("Title"): GetMicroInfo("InfoPlatformTitle")%></title>
+    <meta name="description" content="<%: MicroPublicHelper.MicroPublic.GetMicroInfo("MetaDescription") %>" />
+    <meta name="keywords" content="<%: MicroPublicHelper.MicroPublic.GetMicroInfo("MetaKeyword") %>" />
+    <script src='<%: ResolveUrl("~/layuiadmin/layui/layui.js")%>'></script>
+    <link href="<%: ResolveUrl("~/layuiadmin/layui/css/layui.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/layuiadmin/style/admin.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/css/micro.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/css/info.css")%>" rel="stylesheet" media="all" />
+    <link href="<%: ResolveUrl("~/Resource/ico/iconfont.css")%>" rel="stylesheet" media="all" />
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <script src='<%: ResolveUrl("~/Resource/Js/Info.js")%>'></script>
+            <div class="fly-header layui-bg-black">
+              <div class="layui-container">
+                <a class="fly-logo" href="/">
+                  <img src="<%: GetMicroInfo("Logo") %>" alt="MicroOA" style="width:100px; height:42px; background-color:#ffffff; border-radius:6px;">
+                </a>
+                <ul class="layui-nav fly-nav layui-hide-xs">
+                  <li class="layui-nav-item">
+                    <a href="/Views/Default" target="_blank"><i class="ws-icon icon-OA" lay-tips="OA系统"></i></a>
+                  </li>
+                  <li class="layui-nav-item">
+                    <a href="/Views/Info/List"><i class="ws-icon icon-art2" lay-tips="信息平台"></i></a>
+                  </li>
+                  <%=TopMenu() %>
+                </ul>
+    
+                <ul class="layui-nav fly-nav-user">
+                  <li class="layui-nav-item">
+                    <a class="fly-nav-avatar" href="javascript:;">                      
+                      <cite><asp:Image ID="imgAvatar" runat="server" CssClass="layui-nav-img" ImageUrl="~/Resource/UploadFiles/Images/Avatar/default.jpg" /><%=GetDisplayName()%></cite>
+                    </a>
+                    <dl class="layui-nav-child">
+                      <dd><a href="<%: ResolveUrl("~/Views/UserCenter/UserBasicInfo/16")%>" target="_blank" title="Basic Info"><i class="ws-icon icon-shezhi1 ws-font-size20" style="top: 4px; margin-right:5px;"></i>基本设置</a></dd>
+                      <dd><a href="<%: ResolveUrl("~/Views/UserCenter/UserPassword/17")%>" target="_blank" title="Change Password"><i class="ws-icon icon-xiugaimima ws-font-size20" style="top: 4px; margin-right:5px;"></i>修改密码</a></dd>
+                      <hr>
+                      <dd layadmin-event="logout1"><asp:LinkButton ID="lbLogOff" runat="server" OnClick="lbLogOff_Click"><i class="ws-icon icon-tuichu5 ws-font-size18" style="top: 4px; margin-right:5px;"></i>退出</asp:LinkButton></dd>
+                    </dl>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+
+            <div class="fly-panel ws-column"> <%-- fly-column--%>
+              <div class="layui-container">
+                <ul class="layui-clear ws-menu">
+                  <li class="layui-hide-xs layui-this"><a href="/Views/Info/List">首页</a>
+                       <%= GetSubNav() %>
+                  </li>         
+                </ul> 
+    
+                <div class="fly-column-right layui-hide-xs" style="width:260px;"> 
+                    <div class="layui-input-inline">
+                        <input type="text" name="txtKeyword" id="txtKeyword" runat="server" placeholder="keyword" autocomplete="off" class="layui-input" style="height:30px; border-left:none; border-top:none; border-right:none;">
+                        <input type="text" name="txtKeyword2" id="txtKeyword2" runat="server" placeholder="keyword" autocomplete="off" class="layui-input" style="display:none;">
+                    </div>
+                  <span class="fly-search micro-search micro-click" data-type="Search"><i class="layui-icon"></i></span> 
+<%--                  <a href="jie/add.html" class="layui-btn">发表新帖</a> --%>
+                </div> 
+<%--                <div class="layui-hide-sm layui-show-xs-block" style="margin-top: -10px; padding-bottom: 10px; text-align: center;"> 
+                  <a href="jie/add.html" class="layui-btn">发表新帖</a> 
+                </div> --%>
+              </div>
+            </div>
+
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+            <div class="fly-footer">
+              <p><%= GetMicroInfo("Foot") %></p>
+            </div>
+            <input id="txtState" type="hidden" runat="server" value="False" />
+            <input id="txtIsWaterMark" type="hidden" runat="server" visible="false" value="False" />
+            <input id="txtWaterMarkText" type="hidden" runat="server" visible="false" value="WaterMark" />
+            <input id="txtXSpace" type="hidden" runat="server" visible="false" value="100" />
+            <input id="txtYSpace" type="hidden" runat="server" visible="false" value="100" />
+            <input id="txtWaterMarkColor" type="hidden" runat="server" visible="false" value="#dddddd" />
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,1365 @@
+﻿
+/*重新定义部分layui相关样式*/
+/*.layui-form-item {
+    margin-bottom: 10px ;
+
+    #e60021 
+}*/
+
+/*选中时背景和字体颜色*/
+/*::selection {
+    background: #5FB878;
+    color: #FFF;
+}
+
+::-moz-selection {
+    background: #5FB878;
+    color: #FFF;
+}
+
+::-webkit-selection {
+    background: #5FB878;
+    color: #FFF;
+}*/
+
+/*###全站设置为黑白颜色，如国家公祭日###*/
+/*html {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}*/
+
+a:hover {
+    color: #009688;
+    transition: all .3s;
+}
+
+.layui-form-label {
+    width: 90px !important; /*默认值80px 或删除该样式*/
+}
+.layui-input-inline {
+    width: 180px; /*默认值190px 或删除该样式*/
+}
+.layui-form-pane .layui-form-label {
+    width: 120px !important; /*默认值110px*/
+}
+.layui-form-pane .layui-input-block {
+    margin-left: 120px !important; /*默认值110px*/
+}
+.layui-input-block {
+    margin-left: 120px !important; /*默认值110px*/
+}
+
+/*重新定义ifame标签最大宽度为260px，默认值为160px*/
+.layadmin-pagetabs .layui-tab-title li {
+    max-width: 260px !important;
+}
+
+/*按钮下的图标*/
+button > i {
+    top: -1px !important;
+}
+
+/*按钮高亮提示Start*/
+@-webkit-keyframes btnTips {
+    from {-webkit-box-shadow: 0 0 0px #FF5722; }
+    50% { -webkit-box-shadow: 0 0 20px #FF5722;}
+    to {-webkit-box-shadow: 0 0 300px #FF5722; }
+}
+.btnTips {
+    -webkit-animation-name: btnTips;
+    -webkit-animation-duration: 0.2s;
+    -webkit-animation-iteration-count: 4;
+}
+/*按钮高亮提示End*/
+
+
+/*重新定义checkbox样式为灰色start*/
+.layui-form-checkbox[lay-skin=gray] {
+    height: auto !important;
+    line-height: normal !important;
+    min-width: 18px;
+    min-height: 18px;
+    border: none !important;
+    margin-right: 0;
+    padding-left: 28px;
+    padding-right: 0;
+    background: 0 0
+}
+
+    .layui-form-checkbox[lay-skin=gray] span {
+        padding-left: 0;
+        padding-right: 15px;
+        line-height: 18px;
+        background: 0 0;
+        color: #666
+    }
+
+    .layui-form-checkbox[lay-skin=gray] i {
+        right: auto;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        line-height: 16px;
+        border: 1px solid #d2d2d2;
+        font-size: 12px;
+        border-radius: 2px;
+        background-color: #fff;
+        -webkit-transition: .1s linear;
+        transition: .1s linear
+    }
+
+    .layui-form-checkbox[lay-skin=gray]:hover i {
+        border-color: #e2e2e2;
+        color: #fff
+    }
+
+.layui-form-checked[lay-skin=gray] i {
+    border-color: #e2e2e2 !important;
+    background-color: #e2e2e2;
+    color: #fff
+}
+
+.layui-checkbox-disbaled[lay-skin=gray] span {
+    background: 0 0 !important;
+    color: #c2c2c2
+}
+
+.layui-checkbox-disbaled[lay-skin=gray]:hover i {
+    border-color: #d2d2d2
+}
+
+.layui-form-item .layui-form-checkbox[lay-skin=gray] {
+    margin-top: 10px
+}
+
+.layui-table-view .layui-form-checkbox[lay-skin=gray] i {
+    width: 18px;
+    height: 18px
+}
+
+.layui-table-tool-panel li .layui-form-checkbox[lay-skin=gray] {
+    width: 100%;
+    padding-left: 28px
+}
+
+.layui-table-tool-panel li .layui-form-checkbox[lay-skin=gray] i {
+    position: absolute;
+    left: 0;
+    top: 0
+}
+
+.layui-table-tool-panel li .layui-form-checkbox[lay-skin=gray] span {
+    padding: 0
+}
+
+.layui-table-cell .layui-form-checkbox[lay-skin=gray] {
+    top: -1px;
+    padding: 0
+}
+
+/*重新定义checkbox样式为灰色End*/
+
+
+
+/*全局WebSide样式*/
+.ws-datatable-tr {
+    color: #009688 !important;
+    font-weight: bold;
+}
+
+.ws-must-asterisk {
+    color: #FF5722 !important;
+}
+
+.ws-want-asterisk {
+    color: #d2d2d2 !important;
+}
+
+.micro-layer-class .layui-layer-btn .layui-layer-btn0 {
+    border-color: #009688 !important;
+    background-color: #009688 !important;
+    color: #fff
+}
+
+.ws-txt-align-center {
+    text-align:center;
+}
+
+/*width*/
+.ws-width10 {
+    width: 10px !important;
+}
+
+.ws-width20 {
+    width: 20px !important;
+}
+
+.ws-width30 {
+    width: 30px !important;
+}
+
+.ws-width40 {
+    width: 40px !important;
+}
+
+.ws-width50 {
+    width: 50px !important;
+}
+
+.ws-width60 {
+    width: 60px !important;
+}
+
+.ws-width70 {
+    width: 70px !important;
+}
+
+.ws-width80 {
+    width: 80px !important;
+}
+
+.ws-width90 {
+    width: 90px !important;
+}
+
+.ws-width100 {
+    width: 100px !important;
+}
+
+.ws-width110 {
+    width: 110px !important;
+}
+
+.ws-width112 {
+    width: 112px !important;
+}
+
+.ws-width120 {
+    width: 120px !important;
+}
+
+.ws-width130 {
+    width: 130px !important;
+}
+
+.ws-width140 {
+    width: 140px !important;
+}
+
+.ws-width150 {
+    width: 150px !important;
+}
+
+.ws-width160 {
+    width: 160px !important;
+}
+
+.ws-width170 {
+    width: 170px !important;
+}
+
+.ws-width180 {
+    width: 180px !important;
+}
+
+.ws-width190 {
+    width: 190px !important;
+}
+
+.ws-width200 {
+    width: 200px !important;
+}
+
+.ws-width210 {
+    width: 210px !important;
+}
+
+.ws-width220 {
+    width: 220px !important;
+}
+
+.ws-width230 {
+    width: 230px !important;
+}
+
+.ws-width240 {
+    width: 240px !important;
+}
+
+.ws-width250 {
+    width: 250px !important;
+}
+
+.ws-width260 {
+    width: 260px !important;
+}
+
+.ws-width270 {
+    width: 270px !important;
+}
+
+.ws-width280 {
+    width: 280px !important;
+}
+
+.ws-width290 {
+    width: 290px !important;
+}
+
+.ws-width300 {
+    width: 300px !important;
+}
+
+.ws-width320 {
+    width: 320px !important;
+}
+
+.ws-width330 {
+    width: 330px !important;
+}
+
+.ws-width340 {
+    width: 340px !important;
+}
+
+.ws-width350 {
+    width: 350px !important;
+}
+
+.ws-width400 {
+    width: 400px !important;
+}
+
+.ws-width450 {
+    width: 450px !important;
+}
+
+.ws-width500 {
+    width: 500px !important;
+}
+
+.ws-width550 {
+    width: 550px !important;
+}
+
+.ws-width600 {
+    width: 600px !important;
+}
+
+.ws-width650 {
+    width: 650px !important;
+}
+
+.ws-width700 {
+    width: 700px !important;
+}
+
+.ws-width750 {
+    width: 750px !important;
+}
+
+.ws-width800 {
+    width: 800px !important;
+}
+
+.ws-width850 {
+    width: 850px !important;
+}
+
+.ws-width900 {
+    width: 900px !important;
+}
+
+.ws-width950 {
+    width: 950px !important;
+}
+
+.ws-width1000 {
+    width: 1000px !important;
+}
+
+.ws-widthP25 {
+    width: 25% !important;
+}
+
+.ws-widthP30 {
+    width: 30% !important;
+}
+
+.ws-widthP35 {
+    width: 35% !important;
+}
+
+.ws-widthP40 {
+    width: 40% !important;
+}
+
+.ws-widthP45 {
+    width: 45% !important;
+}
+
+.ws-widthP50 {
+    width: 50% !important;
+}
+
+/*max-width*/
+.ws-max-width100 {
+    max-width: 100px !important;
+}
+
+.ws-max-width200 {
+    max-width: 200px !important;
+}
+
+.ws-max-width300 {
+    max-width: 300px !important;
+}
+
+.ws-max-width400 {
+    max-width: 400px !important;
+}
+
+.ws-max-width500 {
+    max-width: 500px !important;
+}
+
+.ws-max-width600 {
+    max-width: 600px !important;
+}
+
+.ws-max-width700 {
+    max-width: 700px !important;
+}
+
+.ws-max-width800 {
+    max-width: 800px !important;
+}
+
+/*min-width*/
+.ws-min-width100 {
+    min-width: 100px !important;
+}
+
+.ws-min-width200 {
+    min-width: 200px !important;
+}
+
+.ws-min-width300 {
+    min-width: 300px !important;
+}
+
+.ws-min-width400 {
+    min-width: 400px !important;
+}
+
+.ws-min-width500 {
+    min-width: 500px !important;
+}
+
+.ws-min-width600 {
+    min-width: 600px !important;
+}
+
+.ws-min-width700 {
+    min-width: 700px !important;
+}
+
+.ws-min-width800 {
+    min-width: 800px !important;
+}
+
+/*height*/
+.ws-height100 {
+    height: 100px !important;
+}
+
+.ws-height200 {
+    height: 200px !important;
+}
+
+.ws-height300 {
+    height: 300px !important;
+}
+
+.ws-height400 {
+    height: 400px !important;
+}
+
+.ws-height500 {
+    height: 500px !important;
+}
+
+.ws-height600 {
+    height: 600px !important;
+}
+
+.ws-height700 {
+    height: 700px !important;
+}
+
+.ws-height800 {
+    height: 800px !important;
+}
+
+/*max-height*/
+.ws-max-height100 {
+    max-height: 100px !important;
+}
+
+.ws-max-height200 {
+    max-height: 200px !important;
+}
+
+.ws-max-height300 {
+    max-height: 300px !important;
+}
+
+.ws-max-height400 {
+    max-height: 400px !important;
+}
+
+.ws-max-height500 {
+    max-height: 500px !important;
+}
+
+.ws-max-height600 {
+    max-height: 600px !important;
+}
+
+.ws-max-height700 {
+    max-height: 700px !important;
+}
+
+.ws-max-height800 {
+    max-height: 800px !important;
+}
+
+/*min-height*/
+.ws-min-height100 {
+    min-height: 100px !important;
+}
+
+.ws-min-height200 {
+    min-height: 200px !important;
+}
+
+.ws-min-height300 {
+    min-height: 300px !important;
+}
+
+.ws-min-height400 {
+    min-height: 400px !important;
+}
+
+.ws-min-height500 {
+    min-height: 500px !important;
+}
+
+.ws-min-height600 {
+    min-height: 600px !important;
+}
+
+.ws-min-height700 {
+    min-height: 700px !important;
+}
+
+.ws-min-height800 {
+    min-height: 800px !important;
+}
+
+/*padding*/
+.ws-padding3 {
+    padding: 3px;
+}
+
+.ws-padding5 {
+    padding: 5px;
+}
+
+.ws-padding10 {
+    padding: 10px;
+}
+
+.ws-padding20 {
+    padding: 20px;
+}
+
+.ws-padding30 {
+    padding: 30px;
+}
+
+.ws-padding40 {
+    padding: 40px;
+}
+
+.padding-top12 {
+    padding-top: 12px;
+}
+
+.ws-padding-top5 {
+    padding-top: 5px;
+}
+
+.ws-padding-top10 {
+    padding-top: 10px;
+}
+
+.ws-padding-top20 {
+    padding-top: 20px;
+}
+
+.ws-padding-top30 {
+    padding-top: 30px;
+}
+
+.ws-padding-top40 {
+    padding-top: 40px;
+}
+
+.ws-padding-top50 {
+    padding-top: 50px;
+}
+
+.ws-padding-top60 {
+    padding-top: 60px;
+}
+
+.ws-padding-top70 {
+    padding-top: 70px;
+}
+
+.ws-padding-top80 {
+    padding-top: 80px;
+}
+
+.ws-padding-top90 {
+    padding-top: 90px;
+}
+
+.ws-padding-top100 {
+    padding-top: 100px;
+}
+
+.ws-padding-bottom5 {
+    padding-bottom: 5px;
+}
+
+.ws-padding-bottom10 {
+    padding-bottom: 10px;
+}
+
+.ws-padding-bottom20 {
+    padding-bottom: 20px;
+}
+
+.ws-padding-bottom30 {
+    padding-bottom: 30px;
+}
+
+.ws-padding-bottom40 {
+    padding-bottom: 40px;
+}
+
+.ws-padding-bottom50 {
+    padding-bottom: 50px;
+}
+
+.ws-padding-bottom60 {
+    padding-bottom: 60px;
+}
+
+.ws-padding-bottom70 {
+    padding-bottom: 70px;
+}
+
+.ws-padding-bottom80 {
+    padding-bottom: 80px;
+}
+
+.ws-padding-bottom90 {
+    padding-bottom: 90px;
+}
+
+.ws-padding-bottom100 {
+    padding-bottom: 100px;
+}
+
+.ws-padding-left5 {
+    padding-left: 5px;
+}
+
+.ws-padding-left10 {
+    padding-left: 10px;
+}
+.ws-padding-left20 {
+    padding-left: 20px;
+}
+.ws-padding-left30 {
+    padding-left: 30px;
+}
+.ws-padding-left40 {
+    padding-left: 40px;
+}
+.ws-padding-left50 {
+    padding-left: 50px;
+}
+.ws-padding-left60 {
+    padding-left: 60px;
+}
+.ws-padding-left70 {
+    padding-left: 70px;
+}
+
+.ws-padding-left100 {
+    padding-left: 100px;
+}
+
+.ws-padding-right5 {
+    padding-right: 5px;
+}
+
+.ws-padding-right10 {
+    padding-right: 10px;
+}
+
+/*margin*/
+.ws-margin3 {
+    margin: 3px;
+}
+
+.ws-margin5 {
+    margin: 5px;
+}
+
+.ws-margin10 {
+    margin: 10px;
+}
+
+.ws-margin20 {
+    margin: 20px;
+}
+
+.ws-margin30 {
+    margin: 30px;
+}
+
+.ws-margin40 {
+    margin: 40px;
+}
+
+.ws-align-center {
+    text-align: center;
+}
+
+.ws-margin-left10 {
+    margin-left: 10px;
+}
+
+.ws-margin-left20 {
+    margin-left: 20px;
+}
+
+.ws-margin-left100 {
+    margin-left: 100px;
+}
+
+.ws-margin-top1 {
+    margin-top: 1px !important;
+}
+
+.ws-margin-top2 {
+    margin-top: 2px !important;
+}
+
+.ws-margin-top3 {
+    margin-top: 3px !important;
+}
+
+.ws-margin-top4 {
+    margin-top: 4px !important;
+}
+
+.ws-margin-top5 {
+    margin-top: 5px !important;
+}
+
+.ws-margin-top10 {
+    margin-top: 10px !important;
+}
+
+.ws-margin-top20 {
+    margin-top: 20px !important;
+}
+
+.ws-margin-top30 {
+    margin-top: 30px !important;
+}
+
+.ws-margin-top40 {
+    margin-top: 40px !important;
+}
+
+.ws-margin-top50 {
+    margin-top: 50px !important;
+}
+
+.ws-margin-top60 {
+    margin-top: 60px !important;
+}
+
+.ws-margin-top70 {
+    margin-top: 70px !important;
+}
+
+.ws-margin-bottom1 {
+    margin-bottom: 1px !important;
+}
+
+.ws-margin-bottom2 {
+    margin-bottom: 2px !important;
+}
+
+.ws-margin-bottom3 {
+    margin-bottom: 3px !important;
+}
+
+.ws-margin-bottom4 {
+    margin-bottom: 4px !important;
+}
+
+.ws-margin-bottom5 {
+    margin-bottom: 5px !important;
+}
+
+.ws-margin-bottom10 {
+    margin-bottom: 10px !important;
+}
+
+.ws-margin-bottom20 {
+    margin-bottom: 20px !important;
+}
+
+.ws-margin-bottom30 {
+    margin-bottom: 30px !important;
+}
+
+.ws-margin-bottom40 {
+    margin-bottom: 40px !important;
+}
+
+.ws-margin-bottom50 {
+    margin-bottom: 50px !important;
+}
+
+.ws-margin-bottom60 {
+    margin-bottom: 60px !important;
+}
+
+.ws-margin-bottom70 {
+    margin-bottom: 70px !important;
+}
+
+/*DataTable*/
+.ws-datatable-tr {
+    color: #009688 !important;
+    font-weight: bold;
+}
+
+.ws-datatable-tr-red {
+    color: #FF5722 !important;
+}
+
+.ws-datatable-tr-red td {
+    color: #FF5722 !important;
+}
+
+.ws-datatable-tr-red div {
+    color: #FF5722 !important;
+}
+
+/*html table*/
+.ws-tb-vertical-font {
+    margin: 0 auto;
+    width: 20px;
+    color: #1E9FFF;
+    font-weight: bold;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+/* 自定义ws-font大小- */
+.ws-font-size6 {
+    font-size: 6px !important;
+}
+
+.ws-font-size8 {
+    font-size: 8px !important;
+}
+
+.ws-font-size9 {
+    font-size: 9px !important;
+}
+
+.ws-font-size10 {
+    font-size: 10px !important;
+}
+
+.ws-font-size12 {
+    font-size: 12px !important;
+}
+
+.ws-font-size14 {
+    font-size: 14px !important;
+}
+
+.ws-font-size16 {
+    font-size: 16px !important;
+}
+
+.ws-font-size18 {
+    font-size: 18px !important;
+}
+
+.ws-font-size20 {
+    font-size: 20px !important;
+}
+
+.ws-font-size21 {
+    font-size: 21px !important;
+}
+
+.ws-font-size22 {
+    font-size: 22px !important;
+}
+
+.ws-font-size24 {
+    font-size: 24px !important;
+}
+
+.ws-font-size26 {
+    font-size: 26px !important;
+}
+
+.ws-font-size28 {
+    font-size: 28px !important;
+}
+
+.ws-font-size30 {
+    font-size: 30px !important;
+}
+
+.ws-font-size32 {
+    font-size: 32px !important;
+}
+
+.ws-font-size34 {
+    font-size: 34px !important;
+}
+
+.ws-font-size36 {
+    font-size: 36px !important;
+}
+
+.ws-font-size38 {
+    font-size: 38px !important;
+}
+
+.ws-font-size40 {
+    font-size: 40px !important;
+}
+
+.ws-font-size50 {
+    font-size: 50px !important;
+}
+
+.ws-font-size60 {
+    font-size: 60px !important;
+}
+
+.ws-font-size70 {
+    font-size: 70px !important;
+}
+
+.ws-font-size72 {
+    font-size: 72px !important;
+}
+
+.ws-font-size76 {
+    font-size: 76px !important;
+}
+
+.ws-font-size80 {
+    font-size: 80px !important;
+}
+
+/*font color*/
+.ws-font-white {
+    color: #FFFFFF !important;
+}
+
+.ws-font-red {
+    color: #FF5722 !important;
+}
+
+.ws-font-blue {
+    color: #1E9FFF !important;
+}
+
+.ws-font-green {
+    color: #009688 !important;
+}
+
+.ws-font-green2 {
+    color: #5FB878 !important;
+}
+
+.ws-font-dgray {
+    color: #393D49 !important;
+}
+
+.ws-font-orange {
+    color: #FFB800 !important;
+}
+
+.ws-font-gray {
+    color: Gray !important;
+}
+
+.ws-font-gray2 {
+    color: #c2c2c2 !important;
+}
+
+.ws-font-gray3 {
+    color: #999999 !important;
+}
+
+.ws-font-bold {
+    font-weight: bold;
+}
+
+/*紫色*/
+.ws-bg-purple {
+    background-color: #c71585 !important;
+}
+/*红色*/
+.ws-bg-red {
+    background-color: #e60021 !important;
+}
+/*浅蓝色*/
+.ws-bg-blue2 {
+    background-color: #00ced1 !important;
+}
+
+/*符号*/
+.ws-asterisk {
+    color: #FF5722 !important;
+    vertical-align: bottom;
+}
+
+.ws-mid {
+    vertical-align: middle;
+}
+
+/*border*/
+.ws-border-trb {
+    border-top: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/*background*/
+.ws-bg-white {
+    background-color: White !important;
+}
+
+.ws-bg-gray {
+    background-color: #f2f2f2;
+}
+
+.ws-bg-gray2 {
+    background-color: #eeeeee;
+}
+
+.ws-bg-gray3 {
+    background-color: #e2e2e2;
+}
+
+.ws-bg-gray4 {
+    background-color: #dddddd;
+}
+
+.ws-bg-gray5 {
+    background-color: #d2d2d2;
+}
+
+.ws-bg-gray6 {
+    background-color: #c2c2c2;
+}
+
+.ws-bg-green {
+    background-color: #5FB878;
+}
+
+
+.ws-text-center {
+    text-align: center !important;
+}
+
+.ws-border {
+    border: 1px solid #f2f2f2;
+}
+
+.ws-border-grey {
+    border: 1px solid #eeeeee;
+}
+
+.ws-border-none {
+    border: 0px !important;
+}
+
+.ws-form-label {
+    border: none !important;
+    background-color: #FFFFFF !important;
+}
+
+.ws_border_red {
+    border: 1px solid red;
+}
+
+.ws-w-p100 {
+    width: 100% !important;
+}
+
+.ws-h-p100 {
+    height: 100% !important;
+}
+
+.ws-wh-p100 {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.ws-mid {
+    vertical-align: middle;
+}
+
+
+.ws-scrollbar::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.ws-scrollbar::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    background: #c2c2c2;
+}
+
+.ws-scrollbar::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background: #F0F0F0;
+}
+
+
+.ws-quote-nm {
+    border-style: solid;
+    border-width: 0px 0px 0px 5px !important;
+    border-color: #e6e6e6 !important;
+    background-color: #f2f2f2 !important;
+}
+
+
+
+
+/*步骤*/
+    .ws-wrap {
+        width: 100%;
+        height: auto;
+        line-height: 30px;
+        margin: 0px auto 0;
+    }
+
+    .ws-wrap ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+    }
+
+    .ws-step-case {
+        height: 40px;
+    }
+
+    .ws-step-case li {
+        float: left;
+        margin: 0px;
+        /*width: 20%;*/
+        position: relative;
+        cursor: pointer;
+    }
+
+    .ws-step-case li span {
+        display: block;
+        background-color: #ccc;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        color: #fff;
+        font-weight: bold;
+        margin-right: 24px;
+    }
+
+    .ws-step-case b {
+        position: absolute;
+        font-size: 0px;
+        line-height: 0px;
+        top: 0px;
+    }
+
+    .ws-step-case .b-1 {
+        border-width: 20px 0 20px 20px;
+        border-style: solid dashed solid solid;
+        border-color: #ccc transparent #ccc transparent;
+        left: -19px;
+    }
+
+    .ws-step-case .b-2 {
+        border-width: 20px 0 20px 20px;
+        border-style: dashed dashed dashed solid;
+        border-color: transparent transparent transparent #ccc;
+        left: -24px;
+    }
+    /*当前状态后*/
+    .ws-step-case .ws-finish + li .b-2 {
+        border-color: transparent transparent transparent #5FB878;
+    }
+    /*完成的状态*/
+    .ws-step-case .ws-finish span {
+        background-color: #5FB878;
+        color: #FFF;
+    }
+
+    .ws-step-case .ws-finish .b-1 {
+        border-color: #5FB878 #5FB878 #5FB878 #FFF;
+    }
+
+    .ws-step-case .ws-finish .b-2 {
+        border-left-color: #5FB878;
+    }
+    /*驳回的状态*/
+    .ws-step-case .ws-return span {
+        background-color: #FF5722;
+        color: #FFF;
+    }
+
+    .ws-step-case .ws-return + li .b-2 {
+        border-color: transparent transparent transparent #FF5722;
+    }
+
+    .ws-step-case .ws-return .b-1 {
+        border-color: #FF5722 #FF5722 #FF5722 #FFF;
+    }
+
+    .ws-step-case .ws-return .b-2 {
+        border-left-color: #FF5722;
+    }
+
+    /*加班预警颜色*/
+    .ws-bg-warning {
+        color: #ffffff;
+        background-color: red;
+    }
+
+    /*加班预警颜色 sm*/
+    .ws-bg-sm-img-warning {
+        color: red;
+        background: url(/Resource/Images/smwarning.png) no-repeat;
+    }
+    /*加班预警颜色 md*/
+    .ws-bg-md-img-warning {
+        color: red;
+        background: url(/Resource/Images/mdwarning.png) no-repeat;
+    }
+
+    /*加班预警颜色 left*/
+    .ws-bg-img-warning {
+        background: url(/Resource/Images/warning.png) no-repeat;
+    }
+
+    /*加班预警颜色 right*/
+    .ws-bg-img-warning2 {
+        background: url(/Resource/Images/warning2.png) no-repeat right top;
+    }
+
+    /*首页日历休日*/
+    .ws-bg-cal-img-offday {
+        background: url(/Resource/Images/offday.png) no-repeat;
+    }
+
+    /*首页日历法定*/
+    .ws-bg-cal-img-statutory {
+        background: url(/Resource/Images/statutory.png) no-repeat;
+    }
+
+    /*修改xmSelect下拉菜单的最小高度为200px*/
+    xm-select > .xm-body .xm-body-cascader {
+    min-height: 200px !important;
+    }
+
+    /*xmSelect v1.2.3版本，下拉菜单级联模式背景变为绿色，字体变为白色*/
+    /*修改xmSelect 将字体改变回绿色，背景白色*/
+    xm-select > .xm-body .xm-body-cascader .selected {
+        background-color: white !important;
+    }
+    xm-select > .xm-body .xm-body-cascader .xm-option.selected.hide-icon .xm-option-content {
+        color: rgb(0, 150, 136) !important;
+    }
+
+    /*检查浏览器版本的提示层样式*/
+    .ws-checkbrowser-tips .layui-layer-content {
+        padding: 10px;
+        background: #5fb878;
+        color: #FFFFFF;
+        opacity: 0.8;
+        border: none;
+    }
+
+    /*解决数据表格鼠标由上而下滑动，行边框消失（layuiAdmin v1.7.1，Microsoft Edge 版本 91.0.864.64）*/
+    .layui-card-body table {
+        border-collapse: separate;
+    }
+
+    /*自定义blockquote样式*/
+    .ws-elem-quote {
+        margin-bottom: 10px;
+        padding: 15px;
+        line-height: 1.6;
+        border-left: 5px solid #D0E5F2;
+        border-radius: 0 2px 2px 0;
+        background-color: #FAFAFA
+    }
+    .ws-elem-quote p{ margin:0 !important; padding:0 !important;}
+
+    /* Micro Menu 主要样式(自定义菜单)，如信息信息共享平台的导航菜单 */
+    /* .ws-menu { height:35px; line-height:35px; font-size:15px; }*/
+    .ws-menu li { float:left; position:relative;} /*这一级是导航*/
+    .ws-menu>li a { display:block; line-height:50px; text-decoration:none; padding:0px 20px; color:#333333;   }
+    .ws-menu li li a { line-height:36px;}
+    .ws-menu li a:hover {  background:#EFEFEF; color:#5FB878; }
+    .ws-menu li .ws-menu-more { position: absolute;color: #666; right: 5px;top: -1px;font-weight: 700; transform: scale(0.6, 1);}
+ 
+    .ws-menu li ul { position:absolute; float:left; width:150px; box-shadow:2px 2px 3px #D2D2D2;  border-left:1px solid #F6F6F6;border-top:1px solid #F6F6F6; display:none; background-color:#FFFfff; z-index:9998;} /*这是第二级菜单*/
+    .ws-menu li ul a { width:110px;text-decoration:none; color:#333333;}
+    .ws-menu li ul a:hover { background:#f2f2f2; color:#5FB878;}
+ 
+    .ws-menu li ul ul{ top:0;left:150px;  margin-left:0px; border-left:1px solid #F6F6F6; border-top:1px solid #F6F6F6; z-index:9999;} /*从第三级菜单开始,所有的子级菜单都相对偏移*/
+
+    .ws-column {height: 50px; line-height: 50px;}
+
+    /*水印识别换行符*/
+    .ws-watermark {white-space: pre-line;}

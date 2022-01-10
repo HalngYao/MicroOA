@@ -1,0 +1,20 @@
+﻿html {
+    background-color: #ffffff !important;
+    color: #666;
+}
+.layui-card {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0) !important;
+}
+.layui-layer-btn {
+    border-top: solid 1px #eeeeee;
+    background-color: #F8F8F8;
+}
+
+/*隐藏页面的保存按钮，用弹窗的按钮进行操作*/
+.ws-hide-btn {
+    display: none !important;
+}
+
+.layui-card-header {
+    border-bottom:none!important;
+}
