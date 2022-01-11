@@ -34,7 +34,6 @@
 <add name=“ConnectionName” connectionString=“Server=你的数据库IP地址;Database=你的数据库名称;User ID=你的数据库账号;Password=你的数据库密码" providerName="System.Data.SqlClient"/>
 
 
-
 # 二、画面展示
 **登录画面**
 ![Login](https://user-images.githubusercontent.com/43397016/148747156-b8a80529-daf9-4199-a2a4-8556bf14a270.png)
