@@ -9,7 +9,7 @@
 
 
 # 一、主要功能
-![FunOverview](https://user-images.githubusercontent.com/43397016/148747088-2ac190a4-bd54-43c3-b322-9d1c12f8c0bb.png)
+![图片1](https://user-images.githubusercontent.com/43397016/148900124-2e6a5363-c631-463f-a983-e67c76110e53.png)
 
 
 **1.开发工具**
