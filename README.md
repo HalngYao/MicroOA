@@ -5,7 +5,7 @@
 这样有多少个录入界面, 就要设计多少个输入表单页面, 因此需要进行大量的表单设计, 而这些表单往往又是类似的, 
 大多应用文本框、列表框、单选按钮、复选框等等表单录入元素, 为了减少重复开发的工作量、提高程序的通用性和工作效率,
 因此需要一种动态的、灵活的、安全性高的、快速有效的动态设计方法以方便系统管理和维护。
-![image](https://user-images.githubusercontent.com/43397016/148747551-fb7b6a2d-600f-4551-b1cf-cb32c852b415.png)
+<img src="https://user-images.githubusercontent.com/43397016/148747551-fb7b6a2d-600f-4551-b1cf-cb32c852b415.png" width="600px" />
 
 
 # 一、主要功能
@@ -13,11 +13,25 @@
 
 
 **1.开发工具**
-![image](https://user-images.githubusercontent.com/43397016/148747900-c49a3aa4-7505-4596-a732-d2a4e629eecc.png)
+- 开发工具：Visual Studio 2019
+- 开发语言：C#(Asp.net)
+- 框架：.Net Framework 4.5
+- 数据库：Sql Server 2008 R2
+- UI： Layui、 Layfly
+- 引用控件：WangEditor、 xmSelect、 Fullcalendar
+- 引用库： Newtonsoft.Json.dll、 ClosedXML.dll、 DocumentFormat.OpenXml.dll
+- 运行环境：推荐使用IIS7.5或以上，也可以使用云虚拟主机，ECS等
 
 
 **2.运行环境**
-![image](https://user-images.githubusercontent.com/43397016/148747774-dc1fd26e-0b40-4665-bd6c-618f5034464a.png)
+- Windows Server 2012或以上安装IIS和.net framework4.5（也可以使用云虚拟主机，ECS等）
+- 配置应用程序池为集成模式
+- 导入初始数据库（初始数据库路径：源代码根目录\Resource\DB\MicroOA-Initial-database.sql）
+--初始数据库导入方法，打开MS SQL Server 2008 R2控制面板，新建空白数据库
+--在新建的数据库下，新建查询，把如下所有sql命令复制进去，执行命令
+- 修改Web.config文件，第18行<br/>
+<add name=“ConnectionName” connectionString=“Server=你的数据库IP地址;Database=你的数据库名称;User ID=你的数据库账号;Password=你的数据库密码" providerName="System.Data.SqlClient"/>
+
 
 
 # 二、画面展示
