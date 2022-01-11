@@ -47,7 +47,7 @@ B站：https://www.bilibili.com/video/BV1534y1B7J1?spm_id_from=333.999.0.0
 <br/>
 运行环境搭建：https://micro-oa.com/Views/Info/Detail/27/4
 
-**3.演示**
+**3.演示Demo**
 <br/>
 演示地址：https://micro-oa.com
 
