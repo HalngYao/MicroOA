@@ -5,19 +5,33 @@
 这样有多少个录入界面, 就要设计多少个输入表单页面, 因此需要进行大量的表单设计, 而这些表单往往又是类似的, 
 大多应用文本框、列表框、单选按钮、复选框等等表单录入元素, 为了减少重复开发的工作量、提高程序的通用性和工作效率,
 因此需要一种动态的、灵活的、安全性高的、快速有效的动态设计方法以方便系统管理和维护。
-![image](https://user-images.githubusercontent.com/43397016/148747551-fb7b6a2d-600f-4551-b1cf-cb32c852b415.png)
+<br/>
+<img src="https://user-images.githubusercontent.com/43397016/148747551-fb7b6a2d-600f-4551-b1cf-cb32c852b415.png" width="600px" />
 
 
 # 一、主要功能
-![FunOverview](https://user-images.githubusercontent.com/43397016/148747088-2ac190a4-bd54-43c3-b322-9d1c12f8c0bb.png)
+![图片2](https://user-images.githubusercontent.com/43397016/148900409-83defba1-01d4-4654-b18d-0e6594b948ed.png)
 
 
 **1.开发工具**
-![image](https://user-images.githubusercontent.com/43397016/148747900-c49a3aa4-7505-4596-a732-d2a4e629eecc.png)
+- 开发工具：Visual Studio 2019
+- 开发语言：C#(Asp.net)
+- 框架：.Net Framework 4.5
+- 数据库：Sql Server 2008 R2
+- UI： Layui、 Layfly
+- 引用控件：WangEditor、 xmSelect、 Fullcalendar
+- 引用库： Newtonsoft.Json.dll、 ClosedXML.dll、 DocumentFormat.OpenXml.dll
+- 运行环境：推荐使用IIS7.5或以上，也可以使用云虚拟主机，ECS等
 
 
 **2.运行环境**
-![image](https://user-images.githubusercontent.com/43397016/148747774-dc1fd26e-0b40-4665-bd6c-618f5034464a.png)
+- Windows Server 2012或以上安装IIS和.net framework4.5（也可以使用云虚拟主机，ECS等）
+- 配置应用程序池为集成模式
+- 导入初始数据库（初始数据库路径：源代码根目录\Resource\DB\MicroOA-Initial-database.sql）
+--初始数据库导入方法，打开MS SQL Server 2008 R2控制面板，新建空白数据库
+--在新建的数据库下，新建查询，把如下所有sql命令复制进去，执行命令
+- 修改Web.config文件，第18行<br/>
+<add name=“ConnectionName” connectionString=“Server=你的数据库IP地址;Database=你的数据库名称;User ID=你的数据库账号;Password=你的数据库密码" providerName="System.Data.SqlClient"/>
 
 
 # 二、画面展示
@@ -41,16 +55,21 @@
 <br/>
 B站：https://www.bilibili.com/video/BV1534y1B7J1?spm_id_from=333.999.0.0
 <br/>
-论文支撑：https://zhuanlan.zhihu.com/p/455489559
+相关论文：https://zhuanlan.zhihu.com/p/455489559
 
 **2.环境搭建**
 <br/>
 运行环境搭建：https://micro-oa.com/Views/Info/Detail/27/4
 
-**3.演示**
+**3.演示Demo**
 <br/>
 演示地址：https://micro-oa.com
 
+**4.仓库地址**
+<br/>
+GitHub： https://github.com/HalngYao/MicroOA
+<br/>
+Gitee：  https://gitee.com/shueer/MicroOA
 
 # 四、免责声明
 - 任何用户在使用Micro-OA微型办公自动化系统前，请您仔细阅读并透彻理解本声明。您可以选择不使用Micro-OA微型办公自动化系统，若您一旦使用Micro-OA微型办公自动化系统，您的使用行为即被视为对本声明全部内容的认可和接受。
