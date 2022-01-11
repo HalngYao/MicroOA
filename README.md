@@ -53,9 +53,9 @@ B站：https://www.bilibili.com/video/BV1534y1B7J1?spm_id_from=333.999.0.0
 
 **4.仓库地址**
 <br/>
-GitHub: https://github.com/HalngYao/MicroOA
+GitHub： https://github.com/HalngYao/MicroOA
 <br/>
-Gitee:  https://gitee.com/shueer/MicroOA
+Gitee：  https://gitee.com/shueer/MicroOA
 
 # 四、免责声明
 - 任何用户在使用Micro-OA微型办公自动化系统前，请您仔细阅读并透彻理解本声明。您可以选择不使用Micro-OA微型办公自动化系统，若您一旦使用Micro-OA微型办公自动化系统，您的使用行为即被视为对本声明全部内容的认可和接受。
