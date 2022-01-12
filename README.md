@@ -11,7 +11,7 @@
 <img src="https://user-images.githubusercontent.com/43397016/148747551-fb7b6a2d-600f-4551-b1cf-cb32c852b415.png" width="600px" />
 
 
-# 一、主要功能 v1.0.0.1
+# 一、主要功能 (v1.0.0.1)
 ![图片2](https://user-images.githubusercontent.com/43397016/148900409-83defba1-01d4-4654-b18d-0e6594b948ed.png)
 
 
