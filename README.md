@@ -1,5 +1,6 @@
 # Micro-OA简单描述
 **最新版本：v1.0.0.1**
+<br/>
 <b>MicroOA是一款不需要专业的开发知识或开发经验，通过页面交互式即可实现动态搭建表单的微型办公自动化系统。</b>
 <br>
 在日常工作当中，我们面临着各种各样的表单，在开发系统时，若我们采用每个录入界面设计一个输入表单页面, 
@@ -10,9 +11,7 @@
 <img src="https://user-images.githubusercontent.com/43397016/148747551-fb7b6a2d-600f-4551-b1cf-cb32c852b415.png" width="600px" />
 
 
-# 一、主要功能
-<br/>
-v1.0.0.1
+# 一、主要功能 v1.0.0.1
 ![图片2](https://user-images.githubusercontent.com/43397016/148900409-83defba1-01d4-4654-b18d-0e6594b948ed.png)
 
 
