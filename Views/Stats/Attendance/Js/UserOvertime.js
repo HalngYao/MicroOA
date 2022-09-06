@@ -244,8 +244,8 @@
     table.on('sort(tabTable)', function (obj) {
         $('.layui-table-body table tr').each(function () {
 
-            var otExDXTotal = parseFloat($(this).children().eq(12).text()),
-                warningValue = parseFloat($(this).children().eq(13).text());
+            var otExDXTotal = parseFloat($(this).children().eq(11).text()),
+                warningValue = parseFloat($(this).children().eq(12).text());
 
             if (!isNaN(otExDXTotal) && !isNaN(warningValue) && otExDXTotal > warningValue) {
                 $(this).children().toggleClass("ws-bg-warning");
