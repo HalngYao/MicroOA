@@ -16,7 +16,7 @@
 **1.开发工具**
 - 开发工具：Visual Studio 2019
 - 开发语言：C#(Asp.net)
-- 框架：.Net Framework 4.5
+- 框架：.Net Framework 4.8【原4.5】
 - 数据库：Sql Server 2008 R2
 - UI： Layui、 Layfly
 - 引用控件：WangEditor、 xmSelect、 Fullcalendar
@@ -25,7 +25,7 @@
 
 
 **2.运行环境**
-- Windows Server 2012或以上安装IIS和.net framework4.5（也可以使用云虚拟主机，ECS等）
+- Windows Server 2012或以上安装IIS和.net framework4.8（也可以使用云虚拟主机，ECS等）
 - 配置应用程序池为集成模式
 - 导入初始数据库（初始数据库路径：源代码根目录\Resource\DB\MicroOA-Initial-database.sql）
 --初始数据库导入方法，打开MS SQL Server 2008 R2控制面板，新建空白数据库
