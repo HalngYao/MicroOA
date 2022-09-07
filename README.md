@@ -59,6 +59,8 @@ B站：https://www.bilibili.com/video/BV1534y1B7J1?spm_id_from=333.999.0.0
 
 **2.环境搭建**
 <br/>
+开发环境搭建：https://micro-oa.com/Views/Info/Detail/27/9
+<br/>
 运行环境搭建：https://micro-oa.com/Views/Info/Detail/27/4
 
 **3.演示Demo**
